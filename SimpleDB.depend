@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1663171824 source:c:\users\lenovo\desktop\coursera\amit\c project\simpledb\main.c
+	"SimpleDB.h"
+
+1663171870 c:\users\lenovo\desktop\coursera\amit\c project\simpledb\simpledb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1663170216 source:c:\users\lenovo\desktop\coursera\amit\c project\simpledb\simpledb.c
+	"SimpleDB.h"
+
+1663170735 source:c:\users\lenovo\desktop\coursera\amit\c project\simpledb\addeddb.c
+	"SimpleDB.h"
+
