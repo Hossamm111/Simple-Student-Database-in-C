@@ -1,16 +1,29 @@
+/********************************************************************************/
+/* Author       : Hossam						        */
+/********************************************************************************/
+
 #ifndef SIMPLEDB_H_INCLUDED
 #define SIMPLEDB_H_INCLUDED
 
-/////////////////////////////INCLUDING LIBRARIES/////////////////////////////
+/*
+ *  INCLUDING LIBRARIES
+ */
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
 
-/////////////////////////////////TYPE DEFINES////////////////////////////////
+/*
+ *  TYPE DEFINES
+ */
+ 
 typedef unsigned char uint8;
 
-///////////////////////PROTOTYPING REQUIRED FUNCTIONS////////////////////////
+/*
+ *  PROTOTYPING REQUIRED FUNCTIONS
+ */
+ 
 bool SDB_IsFull();
 
 uint8 SDB_GetUsedSize();
@@ -25,7 +38,10 @@ void SDB_GetIDList();
 
 bool SDB_IsIDExist();
 
-////////////////////////PROTOTYPING ADDED FUNCTIONS//////////////////////////
+/*
+ *  PROTOTYPING ADDED FUNCTIONS
+ */
+ 
 void SDB_Welcome();
 
 void SDB_MainMenu();
@@ -36,7 +52,10 @@ void SDB_DynamicLoop();
 
 void SDB_Farewell();
 
-////////////////////////////STRUCTURE DECLARATIONS///////////////////////////
+/*
+ *  STRUCTURE DECLARATIONS
+ */
+ 
 struct courses
 {
    uint8 ID[3][10];
@@ -53,11 +72,14 @@ struct entries
     struct entries* next_link;
 }student[10], *entry_data[10];
 
-///////////////////////////////GLOBAL VARIABLES//////////////////////////////
+/*
+ *  GLOBAL VARIABLES
+ */
+ 
 uint8 dynamic_choice[3];
 uint8 counter;
 uint8 counter1;
 uint8 ID1;
 uint8 boolean;
 
-#endif // SIMPLEDB_H_INCLUDED
+#endif /* SIMPLEDB_H_INCLUDED */
